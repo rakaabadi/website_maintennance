@@ -13,6 +13,7 @@ if ($data_user != null) {
 
     if ($password == $data_user['password']) {
         $_SESSION['user'] = $data_user['username'];
+		$_SESSION['nama'] = $data_user['fullname'];
 		//$_SESSION['admin'] = $data_user['admin'];
         header('Location: admin/aplikasi.php');
     } else {
